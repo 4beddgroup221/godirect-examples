@@ -122,7 +122,16 @@
         }
       }
     };
-
+  
+    //NEW! function to average the array
+    function theAverage() {
+      var total = 0
+      for(var i=0; i < data.length; i++) {
+        total += data[i];
+      }
+      var avg = total / data.length;
+    }
+    
     // download csv function to be used when button is pressed
     function download_csv() {
       let csv = sensor.name;
